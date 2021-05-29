@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:padding="30dp">
+
+    <!-- Textview labael register -->
+
+    <TextView
+        android:id="@+id/logo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:text="Registeration Page "
+        android:fontFamily="@font/aclonica"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:transitionName="logo_text" />
+
+    <TextView
+        android:id="@+id/slogan_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register to continue"
+        android:textSize="18sp"
+        android:paddingTop="30dp"
+        android:transitionName="logo_desc"
+        android:layout_below="@id/logo_name"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="210dp"
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:id="@+id/img"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_fileName="google.json">
+
+    </com.airbnb.lottie.LottieAnimationView>
+
+
+
+
+    <!-- EditText  input email -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/emailTLL">
+
+        <EditText
+            android:id="@+id/emailEt"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shapecolor6"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- EditText  input PASSWORD -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/passwordlTLL"
+        android:layout_below="@+id/emailTLL"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/passwordEt"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shapecolor6"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- EditText  input PASSWORD -->
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordlTLL"
+        android:layout_marginTop="50dp"
+        android:background="#000"
+        android:text="GO"
+        android:textColor="#fff" />
+
+    <!--Text view : go to login page -->
+
+    <TextView
+        android:id="@+id/have_accountTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already have account? Login"
+        android:textAlignment="center"
+        android:layout_below="@+id/registerBtn"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal" />
+
+
+
+
+</RelativeLayout>

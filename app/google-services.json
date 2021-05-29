@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "868745505625",
+    "firebase_url": "https://student-data-card-default-rtdb.firebaseio.com",
+    "project_id": "student-data-card",
+    "storage_bucket": "student-data-card.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:868745505625:android:4a1f6d33c8a45700ddba48",
+        "android_client_info": {
+          "package_name": "com.example.studentdatacard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "868745505625-3tq3m50lrsemeeumb9h3qhb1lf58su04.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.studentdatacard",
+            "certificate_hash": "d8cf63d05d9795173590887c08721014aa6cd99e"
+          }
+        },
+        {
+          "client_id": "868745505625-aug7pe9fe0v9qc7b5juvdmd3ef1g30a5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLWmGuF_JD4dfxk-Ih2cxCMgESCFpiC4w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "868745505625-aug7pe9fe0v9qc7b5juvdmd3ef1g30a5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

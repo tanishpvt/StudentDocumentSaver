@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    tools:context=".HomeFragment"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="3dp"/>
+
+    </LinearLayout>
+
+
+        <!--  .....................  animation  ....................  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="document.json"
+                app:lottie_loop="true">
+
+            </com.airbnb.lottie.LottieAnimationView>
+
+        </LinearLayout>
+
+
+        <!--doc upload-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:background="@drawable/shape_round">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Upload / Fetch data. "
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:layout_marginTop="29dp"
+                android:layout_marginLeft="15dp"/>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/img1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="up.json"
+                app:lottie_loop="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="8dp">
+
+            </com.airbnb.lottie.LottieAnimationView>
+
+        </LinearLayout>
+
+
+        <!--have to write detail-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:background="@drawable/shape_round2">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/img2"
+                android:layout_width="110dp"
+                android:layout_height="90dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="security1.json"
+                app:lottie_loop="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="8dp">
+
+            </com.airbnb.lottie.LottieAnimationView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Secure your Data with Firebase Security."
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:layout_marginTop="29dp"
+                android:layout_marginLeft="15dp"/>
+
+        </LinearLayout>
+
+
+        <!--have to write detail-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:background="@drawable/shape_round3">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Encrypt and Decrypt Data "
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:layout_marginTop="29dp"
+                android:layout_marginLeft="15dp"/>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/img3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="lock.json"
+                app:lottie_loop="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="8dp">
+
+            </com.airbnb.lottie.LottieAnimationView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
